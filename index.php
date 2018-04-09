@@ -168,7 +168,7 @@
                 <div class="col-sm-6 col-md-6 right desktop reveal-left-presets">
                     <div class="features-title">
                         <img class="features-icon" src="imgs/presetsIcon@2x.png" alt="Presets screenshot"/>
-                        <h2>Presets</h2>
+                        <h2>Presets *</h2>
                     </div>
                     <p>Personalize your practice session or live performance</p> 
                     <p>Set time intervals with Nagma, Pitch, and BPM</p>
@@ -180,7 +180,7 @@
                 <div class="col-sm-6 col-md-6 right mobile reveal-left-presets">
                     <div class="features-title">
                         <img class="features-icon" src="imgs/presetsIcon@2x.png" alt="Presets screenshot" />
-                        <h2>Presets</h2>
+                        <h2>Presets *</h2>
                     </div>
                     <p>Personalize your practice session or live performance</p> 
                     <p>Set time intervals with Nagma, Pitch, and BPM</p> 
@@ -204,7 +204,7 @@
                 <div class="col-sm-6 col-md-6 right desktop reveal-left-sessions">
                     <div class="features-title">
                         <img class="features-icon" src="imgs/sessionsIcon@2x.png" alt="Sessions screenshot" />
-                        <h2>Sessions</h2>
+                        <h2>Sessions *</h2>
                     </div>
                     <p>Save your practice, performance, or rehearsal sessions</p>
                     <p>Keep track of session details, such as time played, location, and intervals</p>
@@ -216,7 +216,7 @@
                 <div class="col-sm-6 col-md-6 right mobile reveal-left-sessions">
                     <div class="features-title">
                         <img class="features-icon" src="imgs/sessionsIcon@2x.png" alt="Sessions screenshot" />
-                        <h2>Sessions</h2>
+                        <h2>Sessions *</h2>
                     </div>
                     <p>Save your practice, performance, or rehearsal sessions</p>
                     <p>Keep track of session details, such as time played, location, and intervals</p>
@@ -259,6 +259,9 @@
                     <p>Inspire your <em>drut</em> tintal practice with real jhala tracks.</p>
                     <p>Look for the <em>gat</em> icon in the nagma selector.</p>
                 </div>
+            </div>
+            <div class="row">
+                <p class="centered-content footnote">* only available on the iOS version</p>
             </div>
         </div>
     </div>

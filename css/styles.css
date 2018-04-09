@@ -347,6 +347,10 @@ span.small {
     font-size: 110%;
 }
 
+#Features p.footnote {
+    font-size: 90%;
+}
+
 #Features .desktop {
     display: none;
 }
@@ -493,7 +497,6 @@ span.small {
     height: auto;
     margin: 0 8px;
     transition-duration: 250ms;
-    font-style: 
 }
 .sm-icons a:hover {
     text-decoration: none;
