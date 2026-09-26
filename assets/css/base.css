@@ -1,0 +1,163 @@
+/* ===== Reset ===== */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: var(--font-body);
+  font-weight: var(--weight-regular);
+  font-size: var(--text-base);
+  line-height: var(--leading-normal);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Warm gradient mesh layered over the dark base — gives atmosphere instead of flat charcoal */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  pointer-events: none;
+  background:
+    radial-gradient(60vw 60vw at 85% -10%, var(--color-gold-ink), transparent 60%),
+    radial-gradient(50vw 50vw at -10% 110%, var(--color-teal-ink), transparent 65%),
+    radial-gradient(80vw 80vw at 50% 120%, rgba(250, 199, 56, 0.05), transparent 70%);
+}
+
+/* Subtle grain overlay — keeps the dark from feeling tech-flat */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-image: var(--noise-url);
+  background-size: 160px 160px;
+  opacity: 0.06;
+  mix-blend-mode: overlay;
+}
+
+img { max-width: 100%; height: auto; display: block; }
+
+a {
+  color: var(--color-gold);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+a:hover { color: var(--color-gold-light); }
+
+/* ===== Headings ===== */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: var(--weight-bold);
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-tight);
+  color: var(--color-text);
+  font-variation-settings: "opsz" 144, "SOFT" 30;
+}
+
+h1 { font-size: clamp(var(--text-4xl), 6vw, var(--text-6xl)); }
+h2 { font-size: clamp(var(--text-3xl), 4vw, var(--text-5xl)); }
+h3 { font-size: var(--text-2xl); letter-spacing: var(--tracking-snug); }
+h4 { font-size: var(--text-xl); letter-spacing: var(--tracking-snug); }
+
+em, .italic {
+  font-style: italic;
+  font-variation-settings: "opsz" 144, "SOFT" 100, "ital" 1;
+}
+
+p { margin-bottom: var(--space-2); }
+p:last-child { margin-bottom: 0; }
+
+ul, ol { list-style: none; }
+
+button, input, textarea, select { font: inherit; color: inherit; }
+
+::selection { background-color: var(--color-gold); color: var(--color-black); }
+
+:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* ===== Layout utility ===== */
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--space-3);
+}
+.container--narrow { max-width: var(--container-narrow); }
+.container--wide   { max-width: var(--container-wide); }
+
+.section { padding-block: var(--space-12); position: relative; }
+.section--tight { padding-block: var(--space-8); }
+
+.text-center { text-align: center; }
+.text-gold   { color: var(--color-gold); }
+.text-teal   { color: var(--color-teal-light); }
+.text-muted  { color: var(--color-text-muted); }
+
+.mono {
+  font-family: var(--font-mono);
+  font-feature-settings: "ss01", "cv01";
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  font-weight: var(--weight-medium);
+  letter-spacing: var(--tracking-widest);
+  text-transform: uppercase;
+  color: var(--color-gold);
+}
+.eyebrow::before {
+  content: "";
+  display: inline-block;
+  width: 28px;
+  height: 1px;
+  background: var(--color-gold);
+}
+
+/* Decorative section divider — a subtle gold "sam" rule between sections */
+.section-divider {
+  height: 1px;
+  width: 100%;
+  background: linear-gradient(90deg, transparent, var(--color-border-strong) 20%, var(--color-border-strong) 80%, transparent);
+  position: relative;
+}
+.section-divider::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 6px;
+  height: 6px;
+  background: var(--color-gold);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: var(--glow-gold);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

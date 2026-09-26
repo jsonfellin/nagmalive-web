@@ -1,0 +1,114 @@
+:root {
+  /* ===== Colors (design system — per README) ===== */
+  --color-bg: #171712;
+  --color-bg-alt: #1c1c17;
+  --color-bg-card: #22221c;
+  --color-surface: #2a2a23;
+  --color-border: #302f27;
+  --color-border-strong: #42413a;
+
+  --color-text: #f0ece4;          /* warm ivory, not pure white — easier on dark */
+  --color-text-muted: #a39d92;
+  --color-text-subtle: #6b6760;
+
+  --color-gold: #FAC738;
+  --color-gold-light: #FFD966;
+  --color-gold-dark: #C99A1F;
+  --color-gold-ink: rgba(250, 199, 56, 0.16);  /* low-alpha wash */
+
+  --color-teal: #008080;
+  --color-teal-light: #2BB3B3;
+  --color-teal-dark: #005F5F;
+  --color-teal-ink: rgba(0, 128, 128, 0.22);
+
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  /* ===== Typography =====
+     Display: Fraunces — variable serif with optical-size + soft axes; characterful, not Playfair-cliché.
+     Body:    Instrument Sans — humanist sans with personality; replaces Open Sans.
+     Mono:    Geist Mono — clean, modern; used for beat counters, taal cycle, technical accents.
+     To revert to the original system, change --font-display to 'Playfair Display' and --font-body to 'Open Sans'. */
+  --font-display: 'Fraunces', 'Playfair Display', Georgia, serif;
+  --font-body:    'Instrument Sans', 'Open Sans', system-ui, sans-serif;
+  --font-mono:    'Geist Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+
+  --text-xs:   0.75rem;
+  --text-sm:   0.875rem;
+  --text-base: 1rem;
+  --text-lg:   1.125rem;
+  --text-xl:   1.25rem;
+  --text-2xl:  1.5rem;
+  --text-3xl:  2rem;
+  --text-4xl:  2.75rem;
+  --text-5xl:  3.75rem;
+  --text-6xl:  5rem;
+  --text-7xl:  7rem;
+
+  --weight-regular:  400;
+  --weight-medium:   500;
+  --weight-semibold: 600;
+  --weight-bold:     700;
+  --weight-black:    900;
+
+  --leading-tight:    1.05;
+  --leading-snug:     1.2;
+  --leading-normal:   1.55;
+  --leading-relaxed:  1.75;
+
+  --tracking-tight:   -0.025em;
+  --tracking-snug:    -0.01em;
+  --tracking-wide:    0.08em;
+  --tracking-widest:  0.2em;
+
+  /* ===== Spacing (8px grid) ===== */
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2rem;
+  --space-5: 2.5rem;
+  --space-6: 3rem;
+  --space-8: 4rem;
+  --space-10: 5rem;
+  --space-12: 6rem;
+  --space-16: 8rem;
+  --space-20: 10rem;
+
+  /* ===== Layout ===== */
+  --container-max: 1200px;
+  --container-wide: 1320px;
+  --container-narrow: 800px;
+  --header-height: 4.5rem;
+
+  /* ===== Borders ===== */
+  --radius-sm: 4px;
+  --radius-md: 10px;
+  --radius-lg: 18px;
+  --radius-xl: 28px;
+  --radius-full: 9999px;
+
+  /* ===== Shadows & glow ===== */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.35);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.45);
+  --shadow-lg: 0 24px 64px rgba(0, 0, 0, 0.55);
+  --glow-gold: 0 0 32px rgba(250, 199, 56, 0.35);
+  --glow-teal: 0 0 32px rgba(0, 128, 128, 0.35);
+
+  /* ===== Motion ===== */
+  --transition-fast: 150ms cubic-bezier(.2,.7,.3,1);
+  --transition-base: 280ms cubic-bezier(.2,.7,.3,1);
+  --transition-slow: 600ms cubic-bezier(.2,.7,.3,1);
+  --ease-emphasized: cubic-bezier(.16,.84,.3,1);
+}
+
+/* Atmospheric grain — applied via body::before. Encoded as data-URI so no extra request. */
+:root {
+  --noise-url: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.95 0 0 0 0 0.85 0 0 0 0 0.65 0 0 0 0.5 0'/></filter><rect width='100%' height='100%' filter='url(%23n)' opacity='0.5'/></svg>");
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

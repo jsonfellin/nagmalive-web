@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<article>
+  <div class="post-header">
+    <div class="container container--wide">
+      <a href="{{ '/blog/' | relative_url }}" class="post-back reveal">&larr; Back to Blog</a>
+      <div class="page-header__inner">
+        <div>
+          <p class="eyebrow page-header__eyebrow reveal">Journal</p>
+          <h1 class="page-header__title reveal" data-delay="1">{{ page.title }}</h1>
+        </div>
+        <p class="post-header__meta reveal" data-delay="2">
+          {{ page.date | date: "%B %d, %Y" }}
+          {% if page.author %} &middot; {{ page.author }}{% endif %}
+        </p>
+      </div>
+      <div class="page-header__rule reveal" data-delay="3"></div>
+    </div>
+  </div>
+  <div class="container container--wide section">
+    <div class="post-content reveal">
+      {{ content }}
+    </div>
+  </div>
+</article>

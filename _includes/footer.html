@@ -1,0 +1,43 @@
+<footer class="site-footer" role="contentinfo">
+  <div class="container container--wide">
+    <div class="site-footer__grid">
+      <div class="site-footer__brand">
+        <a href="{{ '/' | relative_url }}" class="site-logo" style="display:inline-flex; align-items:center;">
+          <img class="site-logo__icon" src="{{ '/assets/images/app-icon.png' | relative_url }}" alt="" width="32" height="32">
+          <span class="site-logo__text">Nagma<span class="text-gold">Live</span></span>
+        </a>
+        <p class="site-footer__tagline">A studio-grade tabla, lehra, and rhythmic companion — built by musicians, for musicians.</p>
+      </div>
+      <div class="site-footer__nav">
+        <h4 class="site-footer__heading">Site</h4>
+        <ul>
+          {% for item in site.data.navigation %}
+          <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="site-footer__social">
+        <h4 class="site-footer__heading">Connect</h4>
+        <div class="social-links">
+          <a href="https://www.facebook.com/nagmalive" aria-label="Facebook" target="_blank" rel="noopener">
+            <img src="{{ '/assets/images/facebook@2x.png' | relative_url }}" alt="" width="22" height="22">
+          </a>
+          <a href="https://www.youtube.com/@nagmalive" aria-label="YouTube" target="_blank" rel="noopener">
+            <img src="{{ '/assets/images/youtube@2x.png' | relative_url }}" alt="" width="22" height="22">
+          </a>
+          <a href="https://x.com/nagmalive" aria-label="X (Twitter)" target="_blank" rel="noopener">
+            <img src="{{ '/assets/images/twitter@2x.png' | relative_url }}" alt="" width="22" height="22">
+          </a>
+        </div>
+      </div>
+      <div class="site-footer__download">
+        <h4 class="site-footer__heading">Download</h4>
+        {% include app-store-badges.html %}
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <p><span class="site-footer__bottom-mark"></span> &copy; {{ 'now' | date: "%Y" }} NagmaLive · All rights reserved</p>
+      <p><a href="{{ '/about/#contact-form' | relative_url }}">Contact us</a></p>
+    </div>
+  </div>
+</footer>

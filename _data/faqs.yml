@@ -1,0 +1,44 @@
+- question: "What is NagmaLive?"
+  answer: "NagmaLive is a practice app for tabla players and Kathak dancers. It plays real lehra (nagma) recordings on sarangi, sitar, and harmonium by professional Indian classical musicians, not synthesized sounds, and lets you adjust their pitch and tempo independently."
+
+- question: "Is NagmaLive free to download?"
+  answer: "Yes, NagmaLive is free to download on both iOS and Android. A selection of lehras is free, and the full library is available through in-app purchase."
+
+- question: "What taals are available?"
+  answer: "NagmaLive includes lehras in five taals: Tintal (16 beats), Jhaptal (10), Ektal (12), Dhamar (14), and Rupak (7)."
+
+- question: "Can I adjust the tempo?"
+  answer: "Yes. You can set the tempo anywhere from 15 BPM up to 600 BPM in Tintal, or up to 300 BPM in the other taals, so you can go from vilambit to drut. Changing the tempo never changes the pitch."
+
+- question: "What raags are available for lehra?"
+  answer: "NagmaLive offers 38 lehra recordings across 15 raags: Ahir Bhairav, Bageshree, Bairagi, Basant Mukhari, Bilaskhani Todi, Chandrakauns, Charukeshi, Desh, Jogkauns, Kalashree, Kirwani, Madhuvanti, Mishra Mand, Mishra Pilu, and Shuddh Basant."
+
+- question: "Who recorded the lehras?"
+  answer: "The lehras were recorded in Kolkata by Ustad Roshan Ali Khan (sarangi), Jayanta Banerjee (sitar and harmonium), and Hiranmay Mitra (harmonium). The tabla theka in Kathak mode was recorded by Chaz Hastings."
+
+- question: "Can I change the pitch/key?"
+  answer: "Yes. You can raise or lower the pitch to match your tabla or your instrument's tuning, and the tempo stays the same."
+
+- question: "Does NagmaLive include a tanpura?"
+  answer: "Yes. You can play a tanpura drone alongside any lehra, and it is tuned automatically to match that lehra's raag."
+
+- question: "Does NagmaLive work offline?"
+  answer: "Yes. All recordings are included in the app, so no internet connection is needed to practice."
+
+- question: "Is NagmaLive suitable for beginners?"
+  answer: "Absolutely. NagmaLive is designed for all levels, from students just learning their first taal to professional performers preparing for concerts."
+
+- question: "Can I use NagmaLive for Kathak practice?"
+  answer: "Yes. Kathak mode adds live tabla theka recordings under the lehra, matched to its taal and pitch, so dancers can practice with the full accompaniment."
+
+- question: "What devices are supported?"
+  answer: "NagmaLive is available on iOS and Android devices."
+
+- question: "How do I save my practice settings?"
+  answer: "On iOS, presets let you save and recall your practice setups, including the lehra, taal, tempo, and pitch. You can also log practice sessions with notes."
+
+- question: "Can I use NagmaLive for live performances?"
+  answer: "NagmaLive is built primarily for practice, but many musicians also use it in rehearsals and performances. Because the recordings are stored in the app, playback doesn't depend on a connection."
+
+- question: "How do I contact support?"
+  answer: "Use the contact form on our <a href=\"/about/#contact-form\">About page</a> and we'll get back to you. We typically respond within 24 hours. If the form isn't working for you, email support@nagmalive.com."

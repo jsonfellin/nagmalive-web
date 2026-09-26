@@ -1,0 +1,10 @@
+# Ratings and reviews shown on the home page. Copy reviews verbatim from the stores.
+rating: 4.6
+store: App Store
+reviews:
+  - stars: 5
+    source: App Store
+    text: "This is hands-down, my favorite app on the market. The beautiful playing by the musicians who recorded these nagmas keep me inspired throughout a practice and the variety of instruments, tals, and rags ensures there's always something to match my mood. Thank you."
+  - stars: 5
+    source: App Store
+    text: "I have been using it for the last 2 years and it's just like playing for real . Specially the harmonium and Sarangee. I love to play and practice with this app, and it feels like I am playing with some artist . Thanks"

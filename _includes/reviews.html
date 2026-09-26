@@ -1,0 +1,19 @@
+<section class="section section--tight">
+  <div class="container">
+    <div class="rating reveal">
+      <p class="rating__score">{{ site.data.reviews.rating }}</p>
+      {% include stars.html value=site.data.reviews.rating %}
+      <p class="rating__label">Average rating on the {{ site.data.reviews.store }}</p>
+    </div>
+
+    <div class="grid grid--2 reviews">
+      {% for review in site.data.reviews.reviews %}
+      <figure class="review reveal" data-delay="{{ forloop.index }}">
+        {% include stars.html value=review.stars %}
+        <blockquote class="review__text">{{ review.text }}</blockquote>
+        <figcaption class="review__source">{{ review.source }} review</figcaption>
+      </figure>
+      {% endfor %}
+    </div>
+  </div>
+</section>

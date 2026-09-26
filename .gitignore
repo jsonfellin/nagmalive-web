@@ -1,2 +1,9 @@
+_site/
+.jekyll-cache/
+.jekyll-metadata
+Gemfile.lock
 .DS_Store
-add-to-contacts.php
+.sass-cache/
+.ruby-version
+vendor/
+mockups/
