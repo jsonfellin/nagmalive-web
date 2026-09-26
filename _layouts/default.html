@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% include head.html %}
+</head>
+<body>
+  {% include header.html %}
+  <main id="main-content">
+    {{ content }}
+  </main>
+  {% include footer.html %}
+  <script src="{{ '/assets/js/mobile-nav.js' | relative_url }}" defer></script>
+  <script src="{{ '/assets/js/scroll-reveal.js' | relative_url }}" defer></script>
+  {% if page.url == '/' %}
+  <script src="{{ '/assets/js/taal-player.js' | relative_url }}" defer></script>
+  {% endif %}
+</body>
+</html>

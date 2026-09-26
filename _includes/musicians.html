@@ -1,0 +1,28 @@
+<section class="section">
+  <div class="container container--wide">
+    <header style="display:grid; grid-template-columns: 1fr auto; gap: var(--space-3); align-items:end; margin-bottom: var(--space-6); flex-wrap: wrap;" class="reveal">
+      <div>
+        <p class="eyebrow" style="margin-bottom: var(--space-2);">The recordings</p>
+        <h2 style="max-width: 22ch;">Every note played by a&nbsp;<span class="italic text-gold">real</span> musician.</h2>
+      </div>
+      <p style="color: var(--color-text-muted); max-width: 28ch; margin: 0; font-size: var(--text-base);">
+        The artists whose recordings you practice with in NagmaLive. Nothing is synthesized.
+      </p>
+    </header>
+
+    <div class="musicians-grid">
+      {% for musician in site.data.musicians %}
+      <article class="musician reveal" data-delay="{{ forloop.index0 }}">
+        <div class="musician__photo">
+          <img src="{{ '/assets/images/' | append: musician.image | relative_url }}" alt="{{ musician.name }} — {{ musician.instrument }}">
+        </div>
+        <div class="musician__meta">
+          <h3 class="musician__name">{{ musician.name }}</h3>
+          <span class="musician__instrument">{{ musician.instrument }}</span>
+        </div>
+        <p class="musician__desc">{{ musician.description }}</p>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>

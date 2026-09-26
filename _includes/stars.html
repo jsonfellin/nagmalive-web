@@ -1,0 +1,4 @@
+{%- comment -%} Usage: {% include stars.html value=4.6 %} — value 0–5, fractional fill via CSS width. {%- endcomment -%}
+<span class="stars" role="img" aria-label="{{ include.value }} out of 5 stars">
+  <span class="stars__fill" style="width: {{ include.value | times: 20 }}%"></span>
+</span>

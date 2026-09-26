@@ -1,0 +1,19 @@
+- name: Ustad Roshan Ali Khan
+  instrument: Sarangi
+  image: roshanali.jpg
+  description: A superb sarangi player from Bihar, born in Patna in 1944 and trained by his maternal grandfather Ata Hussain Khan. He has accompanied the top musicians and Kathak dancers of his day.
+
+- name: Jayanta Banerjee
+  instrument: Sitar &amp; Harmonium
+  image: jayanta.jpg
+  description: Sitarist, composer, and accompanist trained under Guru Pandit Rabi Chakraborty. He has performed across India, the US, Australia, New Zealand, and Europe, and the lehras were recorded in his Kolkata studio.
+
+- name: Hiranmay Mitra
+  instrument: Harmonium
+  image: hiranmay.jpg
+  description: Studied vocal music with Pandit A. Kanan and tabla with Pandit Sanjay Mukherjee at Rabindra Bharati University in Kolkata, and has accompanied top musicians including Pandit Ajoy Chakrabarty.
+
+- name: Chaz Hastings
+  instrument: Tabla
+  image: Chaz.jpg
+  description: A prominent performer and teacher of tabla in the Pacific Northwest (USA) who has studied in India with some of the world's top musicians. His theka recordings power Kathak mode.

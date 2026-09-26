@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+{%- comment -%}
+  Generic page shell. Front matter may set `eyebrow` to override the kicker
+  above the title; it falls back to a neutral label.
+{%- endcomment -%}
+<div class="page-header">
+  <div class="container container--wide">
+    <div class="page-header__inner">
+      <div>
+        <p class="eyebrow page-header__eyebrow reveal">{{ page.eyebrow | default: "NagmaLive" }}</p>
+        <h1 class="page-header__title reveal" data-delay="1">{{ page.title }}</h1>
+      </div>
+      {% if page.description %}
+      <p class="page-header__subtitle reveal" data-delay="2">{{ page.description }}</p>
+      {% endif %}
+    </div>
+    <div class="page-header__rule reveal" data-delay="3"></div>
+  </div>
+</div>
+
+<div class="container container--wide section">
+  <div class="prose reveal">
+    {{ content }}
+  </div>
+</div>
