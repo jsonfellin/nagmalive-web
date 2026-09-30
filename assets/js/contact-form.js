@@ -16,6 +16,7 @@
       if (response.ok) {
         form.style.display = 'none';
         document.getElementById('form-success').classList.add('is-visible');
+        if (typeof window.gtag === 'function') window.gtag('event', 'generate_lead', { form: 'contact' });
       } else {
         alert('Something went wrong. Please try again or email support@nagmalive.com directly.');
       }

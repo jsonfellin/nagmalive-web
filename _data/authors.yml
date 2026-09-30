@@ -1,0 +1,5 @@
+# Extra metadata for author names used in front matter, read by jekyll-seo-tag.
+NagmaLive:
+  name: NagmaLive
+  type: Organization
+  twitter: nagmalive

@@ -4,9 +4,20 @@ url: "https://nagmalive.com"
 baseurl: ""
 permalink: /blog/:title/
 
+logo: /assets/images/app-icon.png
+
+# GA4 Measurement ID. The tag only loads in production builds (GitHub Pages sets JEKYLL_ENV=production).
+google_analytics: G-W3C64W55J7
+
 author:
   name: NagmaLive
+  type: Organization
   email: support@nagmalive.com
+  twitter: nagmalive
+
+twitter:
+  username: nagmalive
+  card: summary_large_image
 
 social:
   name: NagmaLive
